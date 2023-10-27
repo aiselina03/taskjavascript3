@@ -178,30 +178,4 @@
 // }
 // console.log(mintap(12, 2, 45, 78, 14, 99));
 
-//? 32. Massivin cut elementlerinden en boyuyunu ekrana cixaran proqram  //(duz tapir)
-// function cutmaxtap(...params) {
-//     let maxcutnum = params[0]
-//     for (let i = 0; i < params.length; i++) {
-//         if (params[i] % 2 === 0) {
-//             if (maxcutnum < params[i]) {
-//                 maxcutnum = params[i]
-//             }
-//         }
-//     }
-//     return maxcutnum
-// }
-// console.log(cutmaxtap(11, 56, 35, 14, 71, 22, 67)); // 56
 
-//? 33. Massivin cut elementlerinden en kiciyini ekrana cixaran proqram  //(sehv tapir 32 ile eyni oldugu halda)
-function cutmintap(...params) {
-    let mincutnum = params[0]
-    for (let i = 0; i < params.length; i++) {
-        if (params[i] % 2 === 0) {
-            if (mincutnum > params[i]) {
-                mincutnum = params[i]
-            }
-        }
-    }
-    return mincutnum
-}
-console.log(cutmintap(11, 56, 35, 14, 71, 11, 67));
